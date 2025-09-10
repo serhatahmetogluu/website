@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fiorent Kiralama Yazılımı</title>
+  <meta name="description" content="Fiorent kiralama yazılımı çözümleri: Ekipman Kiralama Yazılımı ve Operasyonel Kiralama Yazılımı." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-placeholder" aria-label="asıl logo">
+          <a href="index.html" style="text-decoration: none; color: inherit;">
+            <img src="solustlogo.jpg" alt="Fiorent Logo" style="height: 40px; width: auto;" />
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Ana menü">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu" class="nav-list">
+          <li class="nav-item has-children">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Neler Yapıyoruz?</button>
+            <ul class="dropdown">
+              <li><a href="ekipman-kiralama.html">Ekipman Kiralama Yazılımı</a></li>
+              <li><a href="operasyonel-kiralama.html">Operasyonel Kiralama Yazılımı</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="ozellikler.html">Özellikler</a></li>
+          <li class="nav-item"><a class="nav-link" href="sektorler.html">Sektörler</a></li>
+          <li class="nav-item has-children">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Kaynaklar</button>
+            <ul class="dropdown">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="destek.html">Destek Merkezi</a></li>
+              <li><a href="kariyer.html">Kariyer</a></li>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="cta-group">
+        <span class="lang-badge">TR</span>
+        <a class="btn btn-primary" href="#basla">Ücretsiz Deneyin</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Fiorent Kiralama Yazılımı Çözümleri ile Tanışın!</h1>
+          <p>Kiralama süreçlerinize en uygun çözümleri keşfedin!</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#demo">Demo İsteyin</a>
+            <a class="btn btn-outline" href="#uzman">Uzmanlarımıza Danışın</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="mockup desktop" aria-label="dashboard görseli" style="position: relative;">
+            <img src="orta2.jpg" alt="Fiorent Dashboard" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12);" />
+            <div style="position: absolute; bottom: -10px; right: 0px; width: 120px; height: 250px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.25), 0 0 0 4px rgba(255,255,255,0.8); overflow: hidden;">
+              <img src="orta1.jpg" alt="Mobile App" style="width: 200%; height: 100%; object-fit: cover;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-rotator">
+      <div class="container promo-inner">
+        <div class="promo-slide active" data-key="features">
+          <div>
+            <h3>ÖZELLİKLER</h3>
+            <p>Her geçen gün artan yeni özelliklerimiz ile kiralama süreçlerinizin dijitalleşmesine destek oluyoruz.</p>
+          </div>
+          <a class="btn btn-outline promo-btn" href="ozellikler.html">Daha Fazlasını Keşfet</a>
+        </div>
+        <div class="promo-slide" data-key="blog">
+          <div>
+            <h3>BLOG</h3>
+            <p>Kiralama, yazılım, pazarlama ve benzeri gibi konuları kapsayan yeni blog gönderilerimizle güncel kalın.</p>
+          </div>
+          <a class="btn btn-outline promo-btn" href="blog.html">Daha Fazla Oku</a>
+        </div>
+        <div class="promo-dots" role="tablist">
+          <button class="dot active" aria-label="Özellikler" data-target="features"></button>
+          <button class="dot" aria-label="Blog" data-target="blog"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="collap-section">
+      <div class="container">
+        <div class="collap-content center">
+          <h3>Neler yapıyoruz?</h3>
+          <p>Kiralama süreçlerinizi hangi çözümümüz ile optimize etmek istersiniz?</p>
+        </div>
+        
+        <div class="solutions-grid">
+          <article id="ekipman-kiralama" class="solution-card pastel-blue">
+            <div class="solution-copy">
+              <h3>Ekipman Kiralama Yazılımı</h3>
+              <p>Çözümümüz muhasebe uygulamaları da dahil olmak üzere farklı sektörlerdeki her türlü ekipmanın kiralama süreçlerini otomatikleştirir ve optimize eder.</p>
+              <a class="link-more" href="ekipman-kiralama.html">Daha Fazla Göster</a>
+            </div>
+            <div class="solution-media duo">
+              <img src="ekipmankiralama/Kullanıcılar.avif" alt="Ekipman Kiralama Dashboard" />
+              <img src="ekipmankiralama/Kullanıcılar Mobil.avif" alt="Ekipman Mobil Uygulama" />
+            </div>
+          </article>
+          <article id="operasyonel-kiralama" class="solution-card pastel-peach">
+            <div class="solution-copy">
+              <h3>Operasyonel Kiralama Yazılımı</h3>
+              <p>Tüm finansal varlıklarınızın satınalmadan 2. el satışına kadar olan süreçlerini muhasebe uygulamaları ile birlikte yönetin, raporlama çözümleri ile analitik veriler oluşturun.</p>
+              <a class="link-more" href="operasyonel-kiralama.html">Daha Fazla Göster</a>
+            </div>
+            <div class="solution-media duo">
+              <img src="operasyonel/Ekipman Teslim.avif" alt="Operasyonel Dashboard" />
+              <img src="operasyonel/image (3).avif" alt="Mobil Uygulama" />
+            </div>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ozellikler" class="features">
+      <div class="container">
+        <div class="section-intro center">
+          <h2><span class="muted">Esnek ve gelişmiş</span> özelliklerimiz sayesinde ihtiyacınız olan tüm süreçlerinizde <span class="highlight">çözüm sağlıyoruz.</span></h2>
+        </div>
+
+        <div class="feature-grid flow">
+          <svg class="flow-paths" viewBox="0 0 1200 1200" preserveAspectRatio="none" aria-hidden="true">
+            <path class="dash" d="M600 300 C650 360, 700 380, 760 420" />
+            <path class="dash" d="M760 700 C700 760, 640 820, 560 880" />
+            <path class="dash" d="M460 540 C520 600, 600 620, 680 660" />
+          </svg>
+          <article class="feature-card flow-item">
+            <div class="icon" aria-hidden="true">🧭</div>
+            <h3>Organizasyon Aracı</h3>
+            <p>Şirket yapınız içerisindeki tüm satış ofisi, depo yeri, stok lokasyonları gibi organizasyonel yapılarınızı tanımlayabilir, kiralama süreçleri ile entegre ederek organizasyon bazında raporlayabilirsiniz.</p>
+            <a class="link-more" href="ozellikler.html">Daha Fazla Göster</a>
+          </article>
+          <article class="feature-card flow-item offset">
+            <div class="icon" aria-hidden="true">✅</div>
+            <h3>Dinamik Onay Süreçleri</h3>
+            <p>Kiralama süreçlerinizde iş akışınızı kademeli olarak belirttiğiniz parametrelere göre ayarlayabilir, tüm süreçlerin durumlarını takip edebilir ve süreleri ölçebilirsiniz.</p>
+            <a class="link-more" href="ozellikler.html">Daha Fazla Göster</a>
+          </article>
+          <article class="feature-card flow-item">
+            <div class="icon" aria-hidden="true">📊</div>
+            <h3>Dashboard</h3>
+            <p>Günlük operasyonel işlerinizi istatistiklerle birleştirip, atanan işleri ve yönetimsel raporları izleyebileceğiniz kapsamlı bir dashboard sunar.</p>
+            <a class="link-more" href="ozellikler.html">Daha Fazla Göster</a>
+          </article>
+          <article class="feature-card flow-item offset">
+            <div class="icon" aria-hidden="true">🧮</div>
+            <h3>Hesaplama Aracı</h3>
+            <p>Kiralama bedeli, maliyetler, hizmet bedelleri ve finansal değerlemeleri tanımlayarak proje karlılıklarını dinamik hesaplayın.</p>
+            <a class="link-more" href="ozellikler.html">Daha Fazla Göster</a>
+          </article>
+          <article class="feature-card flow-item">
+            <div class="icon" aria-hidden="true">🗂️</div>
+            <h3>Görev Yönetimi</h3>
+            <p>Ekibinize kiralama işlemlerinden doğan işleri atayın, planlayın, kapanma sürelerini takip edin ve performans süreçleri ile ilişkilendirin.</p>
+            <a class="link-more" href="ozellikler.html">Daha Fazla Göster</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="sss" class="faq dark">
+      <div class="container">
+        <h2>Sık Sorulan Sorular</h2>
+        <ul class="faq-list">
+          <li>
+            <h4>Fiorent'e nasıl giriş yaparım?</h4>
+            <p>Giriş ekranından e-posta ve şifrenizi girerek Fiorent hesabınıza giriş yapabilirsiniz.</p>
+          </li>
+          <li>
+            <h4>Fiorent ücretsiz deneme süresi kaç gündür?</h4>
+            <p>Fiorent ücretsiz deneme süresi 15 gündür.</p>
+          </li>
+          <li>
+            <h4>Paketimi nasıl yükseltebilirim?</h4>
+            <p>Üye olduğunuz paket bilgileri Ayarlar &gt; Abonelik ekranında yer alır.</p>
+          </li>
+        </ul>
+        <div class="stars" aria-hidden="true">
+          <span>✦</span><span>✦</span><span>✦</span><span>✦</span>
+        </div>
+      </div>
+    </section>
+
+      <section class="support">
+        <div class="container support-inner">
+          <h3>Farklı Kanallardan İletişim ve Hızlı Problem Çözümü</h3>
+          <div class="communication-hub">
+            <div class="central-circle">
+              <div class="support-person">
+                <div class="person-avatar">
+                  <img src="https://static.wixstatic.com/media/0cb0f2_dd3380276bd748fbba32990571f4f24ef000.jpg/v1/fill/w_268,h_272,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0cb0f2_dd3380276bd748fbba32990571f4f24ef000.jpg" alt="Destek Personeli" />
+                  <div class="play-button">▶</div>
+                </div>
+              </div>
+              <div class="outer-dotted-circle"></div>
+            </div>
+            
+            <div class="service-cards">
+              <div class="service-card" data-service="document">
+                <div class="service-icon">👤📄</div>
+                <span>Kullanıcı Dokümanı</span>
+              </div>
+              <div class="service-card" data-service="chatbot">
+                <div class="service-icon">💬</div>
+                <span>Chat Bot</span>
+              </div>
+              <div class="service-card" data-service="live-support">
+                <div class="service-icon">🎧</div>
+                <span>Canlı Destek</span>
+              </div>
+              <div class="service-card" data-service="help-center">
+                <div class="service-icon">⚙️</div>
+                <span>Yardım Merkezi</span>
+              </div>
+              <div class="service-card" data-service="online-meeting">
+                <div class="service-icon">📹</div>
+                <span>Online Görüşme</span>
+              </div>
+              <div class="service-card" data-service="appointment">
+                <div class="service-icon">📅</div>
+                <span>Randevu Planlaması</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <div class="cta-left">
+              <h2>Başlamaya Hazır Mısın?</h2>
+              <p>Hemen formu doldur.</p>
+              <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Hemen Başla</a>
+                <a href="#" class="btn btn-outline">Randevu Al</a>
+              </div>
+            </div>
+            <div class="cta-right">
+              <div class="scheduling-widget">
+                <div class="widget-header">
+                  <div class="calendar-icon">📅</div>
+                  <div class="widget-logo">
+                    <div class="logo-square"></div>
+                    <span>fiorent</span>
+                  </div>
+                  <h4>Select a Date & Time</h4>
+                </div>
+                <div class="calendar-view">
+                  <div class="calendar-month">June 2023</div>
+                  <div class="calendar-grid">
+                    <div class="calendar-day available">5</div>
+                    <div class="calendar-day available">6</div>
+                    <div class="calendar-day available">7</div>
+                    <div class="calendar-day available">8</div>
+                    <div class="calendar-day available">9</div>
+                    <div class="calendar-day">10</div>
+                    <div class="calendar-day">11</div>
+                    <div class="calendar-day available">12</div>
+                    <div class="calendar-day available">13</div>
+                    <div class="calendar-day available">14</div>
+                    <div class="calendar-day available">15</div>
+                    <div class="calendar-day available">16</div>
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day available">19</div>
+                    <div class="calendar-day available">20</div>
+                    <div class="calendar-day available">21</div>
+                    <div class="calendar-day available">22</div>
+                    <div class="calendar-day available">23</div>
+                    <div class="calendar-day">24</div>
+                    <div class="calendar-day">25</div>
+                    <div class="calendar-day available">26</div>
+                    <div class="calendar-day available">27</div>
+                    <div class="calendar-day available">28</div>
+                    <div class="calendar-day available">29</div>
+                    <div class="calendar-day available">30</div>
+                  </div>
+                </div>
+                <div class="event-details">
+                  <h5>Fiorent Live Demo</h5>
+                  <p>15 min</p>
+                  <p>Web conferencing details provided upon confirmation</p>
+                  <p>Fiorent Equipment Rental Software</p>
+                </div>
+                <div class="timezone">
+                  <span>Turkey Time (15:02)</span>
+                  <div class="clock-icon">🕐</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="decorative-stars">
+            <span class="star">✦</span>
+            <span class="star">✦</span>
+          </div>
+        </div>
+      </section>
+
+
+    <section class="partners">
+      <div class="container">
+        <h2>Fiorent'e değer katan iş ortaklarımız</h2>
+        <p>Birlikte gelişmeye devam ediyoruz.</p>
+        <div class="logo-grid">
+          <div class="logo-item">
+            <img src="fotograflar/isuzuortak.avif" alt="Partner Logo 1" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/progortak.avif" alt="Partner Logo 2" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/wackerneusonortak.avif" alt="Partner Logo 3" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/yenifiloortak.avif" alt="Partner Logo 4" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/burganleasing.avif" alt="Partner Logo 5" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/corporentortak.avif" alt="Partner Logo 6" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/ikinciyeniortak.avif" alt="Partner Logo 7" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/dogantrendortak.avif" alt="Partner Logo 8" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/daygortak.avif" alt="Partner Logo 9" />
+          </div>
+          <div class="logo-item">
+            <img src="fotograflar/ankaraotoortak.avif" alt="Partner Logo 10" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">Fiorent.</div>
+      <nav class="footer-nav">
+        <a href="blog.html">Blog</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="kariyer.html">Kariyer</a>
+        <a href="#kvkk">KVKK Politikası</a>
+        <a href="#mesafeli">Mesafeli Satış Sözleşmesi</a>
+        <a href="#gizlilik">Fiorent Gizlilik Sözleşmesi</a>
+        <a href="#sartlar">Şartlar ve Koşullar</a>
+        <a href="iletisim.html">İletişim</a>
+      </nav>
+      <div class="footer-contact">
+        <div>E-posta: <a href="mailto:info@fiorent.com">info@fiorent.com</a></div>
+        <div class="socials">
+          <a href="#linkedin" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#instagram" aria-label="Instagram">Instagram</a>
+          <a href="#twitter" aria-label="Twitter">Twitter</a>
+          <a href="#facebook" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>Copyright © 2022 FIORENT by NOVACON | All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-list');
+    
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.contains('open');
+      navMenu.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', !isOpen);
+    });
+
+    // Dropdown menus
+    const dropdownButtons = document.querySelectorAll('.has-children .nav-link');
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = button.nextElementSibling;
+        const isOpen = dropdown.classList.contains('open');
+        
+        // Close all other dropdowns
+        document.querySelectorAll('.dropdown.open').forEach(dd => dd.classList.remove('open'));
+        
+        if (!isOpen) {
+          dropdown.classList.add('open');
+        }
+      });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.has-children')) {
+        document.querySelectorAll('.dropdown.open').forEach(dd => dd.classList.remove('open'));
+      }
+    });
+
+    // Promo rotator
+    const promoSlides = document.querySelectorAll('.promo-slide');
+    const promoDots = document.querySelectorAll('.promo-dots .dot');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      promoSlides.forEach(slide => slide.classList.remove('active'));
+      promoDots.forEach(dot => dot.classList.remove('active'));
+      
+      promoSlides[index].classList.add('active');
+      promoDots[index].classList.add('active');
+    }
+
+    promoDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+      });
+    });
+
+    // Auto-rotate promo slides
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % promoSlides.length;
+      showSlide(currentSlide);
+    }, 5000);
+  </script>
+</body>
+</html>
